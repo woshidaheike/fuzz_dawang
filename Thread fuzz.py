@@ -8,7 +8,7 @@ def ftp(ip, password):
     try:
         ftp = FTP()
         ftp.connect(ip, 21)
-        ftp.login("woshidaheike", password)
+        ftp.login("user", password)
         print(password + "密码正确"+"\n")
         ftp.close()
         return True
@@ -28,7 +28,7 @@ def ssh(ip, password):
         return False
 def mysql(ip, password):
     try:
-        conn = pymysql.connect(host=ip, port=3306, user="我是真的帅", password=password, charset='utf8')
+        conn = pymysql.connect(host=ip, port=3306, user="user", password=password, charset='utf8')
         print(password + "密码正确"+"\n")
         conn.close()
         return True
