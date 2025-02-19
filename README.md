@@ -4,4 +4,12 @@
 
 ### 使用步骤
 
-1.
+#### 1.pip install -r requirements.txt
+
+#### 2.填写你要爆破的ip或域名
+
+#### 3.选择你要爆破的协议
+
+#### 4.等待结果
+
+### 两个py文件是不通过的加速方案Thread fuzz.py是基于线程池 Asynchronous fuzz.py基于异步协程 
