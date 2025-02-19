@@ -1,0 +1,5 @@
+redis==5.2.1
+requests==2.32.3
+PyMySQL==1.1.1
+aiohttp==3.11.12
+paramiko==3.5.1
